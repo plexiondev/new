@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+    <!-- Meta info -->
+    <title>Welcome to the home of Event Datapacks | plexion</title>
+    <meta name="title" content="Welcome to the home of Event Datapacks">
+    <meta name="description" content="plexion.dev allows you to browse through a library of minecraft event datapacks and lets you choose one that interests you.">
+    <meta property="og:site_name" content="plexion">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@plexionlive">
+    <meta property="twitter:site:id" content="@plexionlive">
+    <meta property="twitter:creator" content="@plexionlive">
+    <meta property="twitter:creator:id" content="@plexionlive">
+    <meta property="og:url" content="https://plexion.dev/library">
+    <meta property="og:title" content="Welcome to the home of Event Datapacks">
+    <meta property="og:description" content="plexion.dev allows you to browse through a library of minecraft event datapacks and lets you choose one that interests you.">
+    <meta property="og:image" content="https://plexion.dev/img/library.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="theme-color" content="#003AF8">
+    <!-- iOS App support -->
+    <link rel="apple-touch-icon" href="/img/ios.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="https://plexion.dev/site.webmanifest">
+    <!-- Display parameters -->
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="ico" href="/favicon.ico"/>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Load JS -->
+    <script src="/js/scroll.js"></script>
+    <script src="/js/github.js"></script>
+    <!--<script src="/js/scratch.js"></script>-->
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20a071237e.js" crossorigin="anonymous"></script>
+</head>
+<body class="dark" style="--accent-page: var(--library);">
+    <header class="join dark">
+        <a class="brand raise" href="/">
+            <h1 translate="no">plexion</h1>
+        </a>
+        <span class="links">
+            <a href="/" aria-label="Home"><i class="icon material-icons" translate="no">home</i><i class="text">Home<span class="bar"></span></i></a>
+            <a href="/live" aria-label="Live"><i class="icon material-icons" translate="no">cast_connected</i><i class="text">Live<span class="bar"></span></i></a>
+            <a href="/events" aria-label="Events"><i class="icon material-icons" translate="no">emoji_events</i><i class="text">Events<span class="bar"></span></i></a>
+            <a href="/library" class="focus" aria-label="Library"><i class="icon material-icons" translate="no">collections</i><i class="text">Library<span class="bar"></span></i></a>
+            <a href="/socials" aria-label="Socials"><i class="icon material-icons" translate="no">account_circle</i><i class="text">Socials<span class="bar"></span></i></a>
+        </span>
+        <span class="menu">
+            <span class="dropdown-wrap">
+                <a href="/accessibility" aria-label="Options" class="option-open"><i class="material-icons" translate="no">accessibility_new</i></a>
+            </span>
+            <!--<div class="dropdown" id="options-menu" style="display: none; width: 250px;">
+                <div class="header">
+                    <h5>Accessibility</h5>
+                </div>
+                <div class="tiles">
+                    <span class="tile-meta">
+                        <button class="tile" onclick="toggleDyslexicFont()">
+                        <i class="material-icons">font_download</i></button>
+                        <p class="text-12">OpenDyslexic</p>
+                    </span>
+                </div>
+                <ul>
+                    <li>Change theme</li>
+                </ul>
+            </div>-->
+        </span>
+        <!--<script src="/js/options.js"></script>-->
+    </header>
+    <div>
+        <div class="mica reduced">
+            <section class="center med header limited">
+                <h1 class="text-52">Project Library</h1>
+                <p class="text-20">A mix of minecraft datapacks, resourcepacks and maps. Click on a card to learn more.</p>
+            </section>
+            <div id="error"></div>
+            <div class="cards" id="userRepos" style="position: relative; bottom: 100px;"></div>
+            <div class="wave-wrap dark" style="position: relative; top: 1px;">
+                <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="var(--highlight)" style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,90L80,90C160,90,320,90,480,75C640,60,800,30,960,25C1120,20,1280,40,1440,70C1600,100,1760,140,1920,135C2080,130,2240,80,2400,80C2560,80,2720,130,2880,145C3040,160,3200,140,3360,155C3520,170,3680,220,3840,205C4000,190,4160,110,4320,100C4480,90,4640,150,4800,185C4960,220,5120,230,5280,205C5440,180,5600,120,5760,105C5920,90,6080,120,6240,140C6400,160,6560,170,6720,165C6880,160,7040,140,7200,140C7360,140,7520,160,7680,140C7840,120,8000,60,8160,70C8320,80,8480,160,8640,195C8800,230,8960,220,9120,195C9280,170,9440,130,9600,140C9760,150,9920,210,10080,230C10240,250,10400,230,10560,205C10720,180,10880,150,11040,135C11200,120,11360,120,11440,120L11520,120L11520,300L11440,300C11360,300,11200,300,11040,300C10880,300,10720,300,10560,300C10400,300,10240,300,10080,300C9920,300,9760,300,9600,300C9440,300,9280,300,9120,300C8960,300,8800,300,8640,300C8480,300,8320,300,8160,300C8000,300,7840,300,7680,300C7520,300,7360,300,7200,300C7040,300,6880,300,6720,300C6560,300,6400,300,6240,300C6080,300,5920,300,5760,300C5600,300,5440,300,5280,300C5120,300,4960,300,4800,300C4640,300,4480,300,4320,300C4160,300,4000,300,3840,300C3680,300,3520,300,3360,300C3200,300,3040,300,2880,300C2720,300,2560,300,2400,300C2240,300,2080,300,1920,300C1760,300,1600,300,1440,300C1280,300,1120,300,960,300C800,300,640,300,480,300C320,300,160,300,80,300L0,300Z"></path></svg>
+            </div>
+        </div>
+        <div class="bg-back slides" style="z-index: -2;">
+            <div class="slide bg bg-back" style="background-image: url(/wall/home/waterrising.png);"></div>
+            <div class="slide bg bg-back" style="background-image: url(/wall/home/voidrising.png);"></div>
+            <div class="slide bg bg-back" style="background-image: url(/wall/home/racetotheend-old.png);"></div>
+            <div class="slide bg bg-back" style="background-image: url(/wall/home/lavarising.png);"></div>
+            <div class="slide bg bg-back" style="background-image: url(/wall/home/uhc.png);"></div>
+            <div class="slide bg bg-back" style="background-image: url(/wall/home/racetotheend.png);"></div>
+            <div class="slide bg bg-back" style="background-image: url(/wall/home/capturethehelmet.png);"></div>
+        </div>
+        <script src="/js/slides.js"></script>
+    </div>
+    <div class="dark alt">
+        <section class="center">
+            <span class="pfp">
+                <img src="/img/ico/EventsTransparent.png" alt="Trophy symbol representing the Events Bot profile picture" class="pfp small">
+            </span>
+            <h1 class="text-36">Announcing an event?</h1>
+            <p class="text-18">Download and host to sync your events with Discord.</p>
+            <a role="button" class="button focus" href="../events#bot">Get started</a>
+        </section>
+        <div class="wave-wrap" style="position: relative; top: 1px;">
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="var(--ext)" style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,90L80,90C160,90,320,90,480,75C640,60,800,30,960,25C1120,20,1280,40,1440,70C1600,100,1760,140,1920,135C2080,130,2240,80,2400,80C2560,80,2720,130,2880,145C3040,160,3200,140,3360,155C3520,170,3680,220,3840,205C4000,190,4160,110,4320,100C4480,90,4640,150,4800,185C4960,220,5120,230,5280,205C5440,180,5600,120,5760,105C5920,90,6080,120,6240,140C6400,160,6560,170,6720,165C6880,160,7040,140,7200,140C7360,140,7520,160,7680,140C7840,120,8000,60,8160,70C8320,80,8480,160,8640,195C8800,230,8960,220,9120,195C9280,170,9440,130,9600,140C9760,150,9920,210,10080,230C10240,250,10400,230,10560,205C10720,180,10880,150,11040,135C11200,120,11360,120,11440,120L11520,120L11520,300L11440,300C11360,300,11200,300,11040,300C10880,300,10720,300,10560,300C10400,300,10240,300,10080,300C9920,300,9760,300,9600,300C9440,300,9280,300,9120,300C8960,300,8800,300,8640,300C8480,300,8320,300,8160,300C8000,300,7840,300,7680,300C7520,300,7360,300,7200,300C7040,300,6880,300,6720,300C6560,300,6400,300,6240,300C6080,300,5920,300,5760,300C5600,300,5440,300,5280,300C5120,300,4960,300,4800,300C4640,300,4480,300,4320,300C4160,300,4000,300,3840,300C3680,300,3520,300,3360,300C3200,300,3040,300,2880,300C2720,300,2560,300,2400,300C2240,300,2080,300,1920,300C1760,300,1600,300,1440,300C1280,300,1120,300,960,300C800,300,640,300,480,300C320,300,160,300,80,300L0,300Z"></path></svg>
+        </div>
+    </div>
+    <section class="center bg dark ext">
+        <h1 class="text-36">Looking for an older version?</h1>
+        <p class="text-18">The version you're looking for may be found on the <a href="downloads">downloads</a> page.</p>
+    </section>
+    <footer class="dark">
+        <div class="flex">
+            <span class="brand">
+                <div class="main">
+                    <h1 class="brand-font plexion" translate="no">plexion</h1>
+                    <p>Powered 2020-2021</p>
+                    <br>
+                    <label class="overl">Accessibility options:</label>
+                    <a role="button" onclick="toggleDyslexicFont()" href="javascript:void(0);" class="button left opendyslexic-toggle">OpenDyslexic Font</a>
+                    <a role="button" onclick="toggleHyperlegibleFont()" href="javascript:void(0);" class="button left hyperlegible-toggle">Hyperlegible Font</a>
+                </div>
+            </span>
+            <span class="links">
+                <span class="link">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/live">Live</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="/library">Library</a></li>
+                        <li><a href="/branding">Branding</a></li>
+                        <li><a href="/channels">Channels</a></li>
+                        <li><a href="/socials">Socials</a></li>
+                    </ul>
+                </span>
+                <span class="link">
+                    <h4>osu!</h4>
+                    <ul>
+                        <li><a href="/osu!/">Home</a></li>
+                        <li><a href="/osu!/skins">Skins</a></li>
+                        <li><a href="/osu!/tablet">Tablet</a></li>
+                        <li><a href="/osu!/channel">Channel</a></li>
+                        <li><a href="https://github.com/plexiondev/goosu-overlay">Overlay</a></li>
+                    </ul>
+                </span>
+                <span class="link">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="/accessibility">Accessibility</a></li>
+                        <li><a href="/terms">Content Info</a></li>
+                        <li><a href="/socials#contact">Contact</a></li>
+                    </ul>
+                </span>
+                <span class="link">
+                    <h4>Developing</h4>
+                    <ul>
+                        <li><a href="https://github.com/plexiondev/plexiondev.github.io">Github</a></li>
+                        <li><a href="/gnu">License</a></li>
+                    </ul>
+                </span>
+            </span>
+        </div>
+        <div class="padding">
+            <div class="socials">
+                <a class="social-icon" target="_blank" href="https://youtube.com/plexion" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a class="social-icon" target="_blank" href="https://twitch.tv/plexionLIVE" data-tooltip="Twitch">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a class="social-icon" target="_blank" href="https://twitter.com/plexionlive" data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+<!-- Beta scripts -->
+<script src="/experiments/helvetica.js"></script>
+<script src="/experiments/plexionblue.js"></script>
+<script src="/experiments/torus.js"></script>
+<script src="/experiments/light.js"></script>
+<script src="/experiments/accents.js"></script>
+<script src="/experiments/minimalcards.js"></script>
+<script src="/experiments/exo2.js"></script>
+<script src="/experiments/set-card-display.js"></script>
+<!-- Final script importing (after page rendered) -->
+<script src="/js/settings/dyslexic.js"></script>
+<script src="/js/settings/hyperlegible.js"></script>
+<script src="/js/settings/reduced-motion.js"></script>
+<script src="/js/settings/reduced-saturation.js"></script>
+<script src="/js/settings/background-videos.js"></script>
+<script src="/js/settings/high-contrast.js"></script>
+<script src="/js/theme.js"></script>

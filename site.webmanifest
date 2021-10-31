@@ -1,0 +1,7 @@
+{
+    "name": "plexion",
+    "short_name": "plexion",
+    "theme_color": "#ffffff",
+    "background_color": "#ffffff",
+    "display": "standalone"
+}

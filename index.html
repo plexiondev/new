@@ -1,9 +1,708 @@
-<!doctype HTML>
+<!DOCTYPE html>
 <head>
-  <title>to be done</title>
+    <!-- Meta info -->
+    <title>plexion</title>
+    <meta name="title" content="Welcome to plexion!">
+    <meta name="description" content="A channel focused on creating fun and interesting minecraft videos, along with open-source datapacks for the community.">
+    <meta property="og:site_name" content="plexion">
+    <meta property="og:type" content="website">
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:site" content="@plexionlive">
+    <meta property="twitter:site:id" content="@plexionlive">
+    <meta property="twitter:creator" content="@plexionlive">
+    <meta property="twitter:creator:id" content="@plexionlive">
+    <meta property="og:url" content="https://plexion.dev/">
+    <meta property="og:title" content="Welcome to plexion!">
+    <meta property="og:description" content="A channel focused on creating fun and interesting minecraft videos, along with open-source datapacks for the community.">
+    <meta property="og:image" content="https://plexion.dev/img/brand-big.png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+    <meta name="theme-color" content="#003AF8">
+    <!-- iOS App support -->
+    <link rel="apple-touch-icon" href="/img/ios.png">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <link rel="manifest" href="https://plexion.dev/site.webmanifest">
+    <!-- Display parameters -->
+    <meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- Favicon -->
+    <link rel="shortcut icon" type="ico" href="/favicon.ico"/>
+    <!-- JQUERY -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Load JS -->
+    <script src="/js/scroll.js"></script>
+    <!-- Icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/20a071237e.js" crossorigin="anonymous"></script>
 </head>
-<body>
-  <h1>to be done</h1>
-  <hr>
-  <p>stay tuned</p>
+<body class="dark" style="--accent-page: var(--home);">
+    <header class="join dark">
+        <a class="brand" href="/">
+            <h1 translate="no">plexion</h1>
+        </a>
+        <span class="links">
+            <a href="/" class="focus" aria-label="Home"><i class="icon material-icons" translate="no">home</i><i class="text">Home<span class="bar"></span></i></a>
+            <a href="/live" aria-label="Live"><i class="icon material-icons" translate="no">cast_connected</i><i class="text">Live<span class="bar"></span></i></a>
+            <a href="/events" aria-label="Events"><i class="icon material-icons" translate="no">emoji_events</i><i class="text">Events<span class="bar"></span></i></a>
+            <a href="/library" aria-label="Library"><i class="icon material-icons" translate="no">collections</i><i class="text">Library<span class="bar"></span></i></a>
+            <a href="/socials" aria-label="Socials"><i class="icon material-icons" translate="no">account_circle</i><i class="text">Socials<span class="bar"></span></i></a>
+        </span>
+        <span class="menu">
+            <span class="dropdown-wrap">
+                <a href="/accessibility" aria-label="Options" class="option-open"><i class="material-icons" translate="no">accessibility_new</i></a>
+            </span>
+            <!--<div class="dropdown" id="options-menu" style="display: none; width: 250px;">
+                <div class="header">
+                    <h5>Accessibility</h5>
+                </div>
+                <div class="tiles">
+                    <span class="tile-meta">
+                        <button class="tile" onclick="toggleDyslexicFont()">
+                        <i class="material-icons">font_download</i></button>
+                        <p class="text-12">OpenDyslexic</p>
+                    </span>
+                </div>
+                <ul>
+                    <li>Change theme</li>
+                </ul>
+            </div>-->
+        </span>
+        <!--<script src="/js/options.js"></script>-->
+    </header>
+    <div style="background-color: #000000;">
+        <div class="ext backup-background-videos" style="background-color: #000000;">
+            <section class="center hero header bg">
+                <span class="text no-flex big can-full">
+                    <h1 class="text-72">PLEXION.DEV BETA</h1>
+                    <p class="text-20">More will arrive soon</p>
+                    <br>
+                    <a role="button" aria-label="Watch the horror videos from 2020" class="button focus big icon ext" href="https://www.youtube.com/playlist?list=PLbaASKiZWzbpRSOnfT3qD1O3t-7ot0t8T">Minecraft Horror</a>
+                    <a role="button" aria-label="Sit back and enjoy some plexion" class="button big icon ext" href="https://youtube.com/plexion?sub_confirmation=1" target="_blank">Get watching</a>
+                </span>
+            </section>
+            <div class="bg-back slides">
+                <div class="slide bg bg-back" style="background-image: url(wall/home/voidrising.png);"></div>
+            </div>
+            <script src="/js/slides.js"></script>
+        </div>
+        <section class="center home-video-series" style="z-index: 4; --padding: 10px;">
+            <h3 class="shadow">The 2021 Collection</h3>
+            <div class="video-series">
+                <span id="video0" class="video-wrap">
+                    <div class="cover">
+                        <img id="video0-thumb" src="">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4 id="video0-name"></h4>
+                        <p class="col-alt" id="video0-released" style="color: var(--accent-page);"></p>
+                    </div>
+                </span>
+                <span id="video1" class="video-wrap" style="position: relative; top: 20px;">
+                    <div class="cover">
+                        <img id="video1-thumb" src="">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4 id="video1-name"></h4>
+                        <p class="col-alt" id="video1-released"></p>
+                    </div>
+                </span>
+                <span id="video2" class="video-wrap" style="position: relative; top: 40px;">
+                    <div class="cover">
+                        <img id="video2-thumb" src="">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4 id="video2-name"></h4>
+                        <p class="col-alt" id="video2-released"></p>
+                    </div>
+                </span>
+            </div>
+        </section>
+    </div>
+    <div style="position: relative; bottom: 200px;">
+        <section class="left full">
+            <h3>Welcome to 2021</h3>
+            <div class="playlists">
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbr-g2OwXgWmCK366lJI72Ul';">
+                    <div class="cover">
+                        <img src="img/thumb/Water Rising.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Best of 2021</h4>
+                        <p class="col-alt">The best of the best.</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbpxBMr1gvlwFXrVcOVswVjv';">
+                    <div class="cover">
+                        <img src="img/thumb/Void Rising.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Minecraft Tournaments</h4>
+                        <p class="col-alt">Joined by me and some friends, we play in fun and challenging scenarios.</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbraHmvoEAHlnIUuS0kM3LKi';">
+                    <div class="cover">
+                        <img src="img/thumb/Stretched.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Minecraft Challenges</h4>
+                        <p class="col-alt">Weird and just not your usual ways of playing the game.</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbphMrTeHbJfbiQ8yOl171QW';">
+                    <div class="cover">
+                        <img src="img/thumb/Modded SMP 2.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Minecraft SMPs</h4>
+                        <p class="col-alt">A compilation of all Minecraft Survival videos i've made.</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbpRSOnfT3qD1O3t-7ot0t8T';">
+                    <div class="cover">
+                        <img src="img/thumb/Horror 2021.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Minecraft Horror</h4>
+                        <p class="col-alt">Very scary Minecraft horror maps that are very scary.</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbqsfS_bq9s0-3MaJwET_FjI';">
+                    <div class="cover">
+                        <img src="img/thumb/Minecraft Live 2021.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Minecraft News</h4>
+                        <p class="col-alt">Get the latest news and updates for Minecraft.</p>
+                    </div>
+                </span>
+            </div>
+        </section>
+        <section class="left full">
+            <h3>THE EMPIRE</h3>
+            <div class="playlists">
+                <span class="video-wrap small" onclick="location.href='gold';">
+                    <div class="cover">
+                        <img src="img/thumb/oscar be like bruh.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4 class="brand-font">plexionGOLD</h4>
+                        <p class="col-alt">Cut Content, Let's Talk, Development videos</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='osuplexion';">
+                    <div class="cover">
+                        <img src="img/thumb/onion.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4 class="brand-font">osu!plexion</h4>
+                        <p class="col-alt">My other channel focused on the game osu!</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='vods';">
+                    <div class="cover">
+                        <img src="img/thumb/cool guy play game.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4 class="brand-font">plexionVODS</h4>
+                        <p class="col-alt">Full stream archives from plexionLIVE</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/channel/UCahUE7jBOaJq-HQWAWGpSuA';">
+                    <div class="cover">
+                        <img src="img/thumb/haunted hunters.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Grand Scheme of Things</h4>
+                        <p class="col-alt">The Minecraft Mapmaking Development Team!</p>
+                    </div>
+                </span>
+            </div>
+            <a class="text-16" href="https://youtube.com/plexion/channels?view=49&flow=grid&shelf_id=5" target="_blank">View the rest<i translate="no" class="material-icons" style="font-size: 18px !important;">chevron_right</i></a>
+        </section>
+        <section class="left full">
+            <h3>The Legacy Library</h3>
+            <div class="playlists">
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbqQg44LBQSEuoRRbWpRb8GP';">
+                    <div class="cover">
+                        <img src="img/thumb/Election.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Best of #PLEXION2020</h4>
+                        <p class="col-alt">My favourite videos from #PLEXION2020.</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbpENdz8VZRKkNFvlApFafTO';">
+                    <div class="cover">
+                        <img src="img/thumb/Messing around in Minecraft.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Best of Plexion 2019</h4>
+                        <p class="col-alt">The best videos to watch from Plexion 2019.</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbqsfS_bq9s0-3MaJwET_FjI';">
+                    <div class="cover">
+                        <img src="img/thumb/Plex News Trailer.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Plex News</h4>
+                        <p class="col-alt">The news show where we talk about all things Minecraft.</p>
+                    </div>
+                </span>
+                <span class="video-wrap small" onclick="location.href='https://www.youtube.com/playlist?list=PLbaASKiZWzbqlTCQZcSPt4hUCMsKdNFGK';">
+                    <div class="cover">
+                        <img src="img/thumb/Plexmas.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">playlist_play</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Plexmas 2019</h4>
+                        <p class="col-alt">Enjoy the festive season with Plexmas 2019!</p>
+                    </div>
+                </span>
+            </div>
+            <br>
+            <br>
+            <label class="over">LOOKING FOR MORE?</label>
+            <br>
+            <br>
+            <a class="text-16" href="https://youtube.com/plexion/playlists" target="_blank">View all playlists available<i translate="no" class="material-icons" style="font-size: 18px !important;">chevron_right</i></a>
+        </section>
+        <section class="center">
+            <h2>The key moments</h2>
+            <p class="text-18">From the beginning of my channel to the present.</p>
+        </section>
+        <section class="center expand timeline">
+            <span>
+                <div class="video-wrap left" onclick="location.href='https://youtu.be/3AfvqPD9guI';">
+                    <div class="cover">
+                        <img src="img/thumb/Scratch Tutorial.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Where it all started</h4>
+                        <p>Surprisingly enough, I didn't start my channel solely based on Minecraft. My first video I ever uploaded to YouTube was a tutorial for <a href="https://scratch.mit.edu">Scratch</a>. This became my most viewed video for way too long.</p>
+                        <p class="col-alt">Oct 2018</p>
+                    </div>
+                </div>
+                <div class="video-wrap right" onclick="location.href='https://youtu.be/Mj0KvcPl5QI';">
+                    <div class="cover">
+                        <img src="img/thumb/Diamond Sword.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>And it continued..</h4>
+                        <p>After that incredible Scratch video I decided to switch up the content (after only one upload). For some reason the I "taught" people how to draw a 256x Diamond Sword. To this day, scientists can still not uncover what ancient techniques are being taught here.</p>
+                        <p class="col-alt">Oct 2018</p>
+                    </div>
+                </div>
+                <div class="video-wrap left" onclick="location.href='https://youtu.be/zHFxnI2Wf2w';">
+                    <div class="cover">
+                        <img src="img/thumb/Pewdiepie Congratulations.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>200 VIEWS!</h4>
+                        <p>In April 2019, I published a video called 'PewDiePie Congratulations - 8 Bit Mix' featuring a mix of an 8-bit congratulations remix and the official vocals. At one point, the video reached the #2 spot on my channel's most viewed shelf until being overtaken later on.</p>
+                        <p class="col-alt">Apr 2019</p>
+                    </div>
+                </div>
+                <div class="video-wrap right" onclick="location.href='https://youtu.be/hEkw6GjZBcM';">
+                    <div class="cover">
+                        <img src="img/thumb/Plexmas.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>Plexmas 2019</h4>
+                        <p>Walking to school one day I came up with this idea, "How about I make a special series for Christmas this year, it won't be that bad". I then created it and ran it from the 13th of December to, what was going to be the 25th but was eventually cancelled on the 17th. I really didn't think that through.</p>
+                        <p class="col-alt">Dec 2019</p>
+                    </div>
+                </div>
+                <div class="video-wrap left" onclick="location.href='https://youtu.be/tU0UwEGgTWU';">
+                    <div class="cover">
+                        <img src="img/thumb/KARLSON.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>The KARLSON Saga</h4>
+                        <p>After school on a Friday, I recorded a video on a new game made by a YouTuber I watch, DaniDev! I downloaded the game and played it while recording. I edited it and uploaded it, not expecting much attention on the video. The day after, I wake up to have a notification feed flooded with subscriber and comment notifications. It was surreal to see and I thank you all so much!</p>
+                        <p class="col-alt">Jan 2020</p>
+                    </div>
+                </div>
+                <div class="video-wrap right" onclick="location.href='https://youtu.be/4RLahHkq17w';">
+                    <div class="cover">
+                        <img src="img/thumb/100.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>The Grand Milestone</h4>
+                        <p>On the 11th of April 2020, I reached the milestone of 100 SUBS! This then lead to a grand 100 sub special video featuring a compilation of my favourite videos and you boys!</p>
+                        <p class="col-alt">Apr 2020</p>
+                    </div>
+                </div>
+                <div class="video-wrap left" onclick="location.href='https://youtu.be/lafLGYhtLuk';">
+                    <div class="cover">
+                        <img src="img/thumb/MINECRAFT MANHUNT.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>The Quality Shift</h4>
+                        <p>In August, I made a big change to the quality of my content & thumbnails that still continues to be worked on to this day. It was at this point that the thumbnails began to be more refined and the videos became more unique and structured.</p>
+                        <p class="col-alt">Aug 2020</p>
+                    </div>
+                </div>
+                <div class="video-wrap right" onclick="location.href='https://youtu.be/lrMCqNwL-VE';">
+                    <div class="cover">
+                        <img src="img/thumb/PLEXIONREWIND2020.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>AGAIN?!</h4>
+                        <p>After the already incredible milestone earlier this year, on the 19th of November 2020 I reached 200 SUBSCRIBERS. WHAT.</p>
+                        <p class="col-alt">Nov 2020</p>
+                    </div>
+                </div>
+                <div class="video-wrap left" onclick="location.href='https://youtu.be/sQ-S6D6R85o';">
+                    <div class="cover">
+                        <img src="img/thumb/Void Rising.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>100 in a day</h4>
+                        <p>To start of #plexion2021 with a bang, the saga of Minecraft Tournament videos started. The first one being Void Rising. It took just over a day for the video to reach 100 views. WHAT. You boys are genuinely insane and I can't thank you enough.</p>
+                        <p class="col-alt">Jan 2021</p>
+                    </div>
+                </div>
+                <div class="video-wrap right" onclick="location.href='https://twitter.com/plexionlive/status/1421788493055938561';">
+                    <div class="cover">
+                        <img src="img/thumb/300.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">open_in_new</i>
+                                <h5>Click to view tweet</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>"300 subscriber andy"</h4>
+                        <p>LETS GOOOOOOOOOOO, actually really sick though.</p>
+                        <p class="col-alt">Aug 2021</p>
+                    </div>
+                </div>
+                <div class="video-wrap left" onclick="location.href='https://youtu.be/PRpRyCea9Vk';">
+                    <div class="cover">
+                        <img src="img/thumb/Hello 2021.png">
+                        <span class="hover">
+                            <span>
+                                <i class="material-icons">play_arrow</i>
+                                <h5>Click to watch</h5>
+                            </span>
+                        </span>
+                    </div>
+                    <div class="info">
+                        <h4>A Look Into The Past</h4>
+                        <p>Back in October 2020 I recorded a video that went out over a year later, Hello 2021.</p>
+                        <p class="col-alt">Oct 2021</p>
+                    </div>
+                </div>
+            </span>
+        </section>
+    </div>
+    <div class="wave-wrap" style="position: relative; top: 1px;">
+        <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 150" version="1.1" xmlns="http://www.w3.org/2000/svg"><path fill="var(--ext)" style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,90L80,90C160,90,320,90,480,75C640,60,800,30,960,25C1120,20,1280,40,1440,70C1600,100,1760,140,1920,135C2080,130,2240,80,2400,80C2560,80,2720,130,2880,145C3040,160,3200,140,3360,155C3520,170,3680,220,3840,205C4000,190,4160,110,4320,100C4480,90,4640,150,4800,185C4960,220,5120,230,5280,205C5440,180,5600,120,5760,105C5920,90,6080,120,6240,140C6400,160,6560,170,6720,165C6880,160,7040,140,7200,140C7360,140,7520,160,7680,140C7840,120,8000,60,8160,70C8320,80,8480,160,8640,195C8800,230,8960,220,9120,195C9280,170,9440,130,9600,140C9760,150,9920,210,10080,230C10240,250,10400,230,10560,205C10720,180,10880,150,11040,135C11200,120,11360,120,11440,120L11520,120L11520,300L11440,300C11360,300,11200,300,11040,300C10880,300,10720,300,10560,300C10400,300,10240,300,10080,300C9920,300,9760,300,9600,300C9440,300,9280,300,9120,300C8960,300,8800,300,8640,300C8480,300,8320,300,8160,300C8000,300,7840,300,7680,300C7520,300,7360,300,7200,300C7040,300,6880,300,6720,300C6560,300,6400,300,6240,300C6080,300,5920,300,5760,300C5600,300,5440,300,5280,300C5120,300,4960,300,4800,300C4640,300,4480,300,4320,300C4160,300,4000,300,3840,300C3680,300,3520,300,3360,300C3200,300,3040,300,2880,300C2720,300,2560,300,2400,300C2240,300,2080,300,1920,300C1760,300,1600,300,1440,300C1280,300,1120,300,960,300C800,300,640,300,480,300C320,300,160,300,80,300L0,300Z"></path></svg>
+    </div>
+    <section class="center bg dark ext">
+        <h1 class="text-36">Get your event up and running</h1>
+        <p class="text-18">Have a browse through the library and start up an event</p>
+        <a role="button" class="button focus" href="/events">Browse Events</a>
+    </section>
+    <footer class="dark">
+        <div class="flex">
+            <span class="brand">
+                <div class="main">
+                    <h1 class="brand-font plexion" translate="no">plexion</h1>
+                    <p>Powered 2020-2021</p>
+                    <br>
+                    <label class="overl">Accessibility options:</label>
+                    <a role="button" onclick="toggleDyslexicFont()" href="javascript:void(0);" class="button left opendyslexic-toggle">OpenDyslexic Font</a>
+                    <a role="button" onclick="toggleHyperlegibleFont()" href="javascript:void(0);" class="button left hyperlegible-toggle">Hyperlegible Font</a>
+                </div>
+            </span>
+            <span class="links">
+                <span class="link">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/live">Live</a></li>
+                        <li><a href="/events">Events</a></li>
+                        <li><a href="/library">Library</a></li>
+                        <li><a href="/branding">Branding</a></li>
+                        <li><a href="/channels">Channels</a></li>
+                        <li><a href="/socials">Socials</a></li>
+                    </ul>
+                </span>
+                <span class="link">
+                    <h4>osu!</h4>
+                    <ul>
+                        <li><a href="/osu!/">Home</a></li>
+                        <li><a href="/osu!/skins">Skins</a></li>
+                        <li><a href="/osu!/tablet">Tablet</a></li>
+                        <li><a href="/osu!/channel">Channel</a></li>
+                        <li><a href="https://github.com/plexiondev/goosu-overlay">Overlay</a></li>
+                    </ul>
+                </span>
+                <span class="link">
+                    <h4>Help</h4>
+                    <ul>
+                        <li><a href="/accessibility">Accessibility</a></li>
+                        <li><a href="/terms">Content Info</a></li>
+                        <li><a href="/socials#contact">Contact</a></li>
+                    </ul>
+                </span>
+                <span class="link">
+                    <h4>Developing</h4>
+                    <ul>
+                        <li><a href="https://github.com/plexiondev/plexiondev.github.io">Github</a></li>
+                        <li><a href="/gnu">License</a></li>
+                    </ul>
+                </span>
+            </span>
+        </div>
+        <div class="padding">
+            <div class="socials">
+                <a class="social-icon" target="_blank" href="https://youtube.com/plexion" data-tooltip="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+                <a class="social-icon" target="_blank" href="https://twitch.tv/plexionLIVE" data-tooltip="Twitch">
+                    <i class="fab fa-twitch"></i>
+                </a>
+                <a class="social-icon" target="_blank" href="https://twitter.com/plexionlive" data-tooltip="Twitter">
+                    <i class="fab fa-twitter"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        var channelID = "UCwQXJpqlQXT07YBLpKF6RSQ";
+        var reqURL = "https://www.youtube.com/feeds/videos.xml?channel_id=";
+        $.getJSON("https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent(reqURL)+channelID, function(data) {
+        
+        // Latest video
+        var link = data.items[0].link;
+        var id = link.substr(link.indexOf("=")+1);
+        var title = data.items[0].title.replace(/&amp;/g,"&");
+        var released2 = data.items[0].pubDate;
+        var thumb2 = link.substr(link.indexOf("=")+1);
+        var thumb = ("https://img.youtube.com/vi/" + thumb2 + "/maxresdefault.jpg")
+        // Date formatting
+        var d = new Date(`${released2}`);
+        var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var date = month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+        let released = (date);
+        $("#video0-name").text(title);
+        $("#video0-released").text(released);
+        $("#video0-thumb").attr("src",thumb);
+        $("#video0").attr("onclick","location.href='" + link + "';");
+
+        // 2nd latest
+        var link = data.items[1].link;
+        var id = link.substr(link.indexOf("=")+1);
+        var title = data.items[1].title.replace(/&amp;/g,"&");
+        var released2 = data.items[1].pubDate;
+        var thumb2 = link.substr(link.indexOf("=")+1);
+        var thumb = ("https://img.youtube.com/vi/" + thumb2 + "/maxresdefault.jpg")
+        // Date formatting
+        var d = new Date(`${released2}`);
+        var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var date = month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+        let released1 = (date);
+        $("#video1-name").text(title);
+        $("#video1-released").text(released1);
+        $("#video1-thumb").attr("src",thumb);
+        $("#video1").attr("onclick","location.href='" + link + "';");
+
+        // 3rd latest
+        var link = data.items[2].link;
+        var id = link.substr(link.indexOf("=")+1);
+        var title = data.items[2].title.replace(/&amp;/g,"&");
+        var released2 = data.items[2].pubDate;
+        var thumb2 = link.substr(link.indexOf("=")+1);
+        var thumb = ("https://img.youtube.com/vi/" + thumb2 + "/maxresdefault.jpg")
+        // Date formatting
+        var d = new Date(`${released2}`);
+        var month = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+        var date = month[d.getMonth()] + " " + d.getDate() + ", " + d.getFullYear();
+        let released3 = (date);
+        $("#video2-name").text(title);
+        $("#video2-released").text(released3);
+        $("#video2-thumb").attr("src",thumb);
+        $("#video2").attr("onclick","location.href='" + link + "';");
+        
+        });
+    </script>
 </body>
+<!-- Beta scripts -->
+<script src="/experiments/helvetica.js"></script>
+<script src="/experiments/plexionblue.js"></script>
+<script src="/experiments/torus.js"></script>
+<script src="/experiments/light.js"></script>
+<script src="/experiments/accents.js"></script>
+<script src="/experiments/minimalcards.js"></script>
+<script src="/experiments/exo2.js"></script>
+<!-- Final script importing (after page rendered) -->
+<script src="/js/settings/dyslexic.js"></script>
+<script src="/js/settings/hyperlegible.js"></script>
+<script src="/js/settings/reduced-motion.js"></script>
+<script src="/js/settings/reduced-saturation.js"></script>
+<script src="/js/settings/background-videos.js"></script>
+<script src="/js/settings/high-contrast.js"></script>
+<script src="/js/theme.js"></script>
