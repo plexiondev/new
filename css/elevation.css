@@ -1,0 +1,48 @@
+/* elevation */
+.dp00, .dp01, .dp02, .dp03, .dp04, .dp06, .dp08, .dp12, .dp16, .dp24 {
+    border-radius: 5px;
+}
+.dp01, .dp02, .dp03, .dp04, .dp06, .dp08, .dp12, .dp16, .dp24 {
+    background-color: var(--dp);
+}
+/* 00dp - 24dp */
+.dp00 {
+    --dp: var(--dp00);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp01 {
+    --dp: var(--dp01);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp02 {
+    --dp: var(--dp02);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp03 {
+    --dp: var(--dp03);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp04 {
+    --dp: var(--dp04);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp06 {
+    --dp: var(--dp06);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp08 {
+    --dp: var(--dp08);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp12 {
+    --dp: var(--dp12);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp16 {
+    --dp: var(--dp16);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}
+.dp24 {
+    --dp: var(--dp24);
+    box-shadow: inset 0px 0px 0px 2px var(--dp01);
+}

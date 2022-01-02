@@ -1,8 +1,0 @@
-User-agent: Googlebot
-Disallow: /projects/
-
-User-agent: *
-Allow: /
-Disallow: /projects/
-
-Sitemap: https://plexion.dev/sitemap.xml
